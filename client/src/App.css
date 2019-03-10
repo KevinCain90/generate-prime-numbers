@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 1em/1.5 'Roboto', sans-serif;
+  color: #4c4c4c;
+  background: #f6f7f7;
+  padding-top: 145px;
+  padding-bottom: 3em;
+  margin: 0;
+}
+
+a {
+  font-size: 14pt;
+  font-family: 'SSTProRoman', Fallback, 'Arial';
+  color: #0072cd;
+}
+
+.search-form input:only-of-type {
+  width: 100%;
+  margin-right: -40px;
+  padding-right: 35px;
+}
+
+.no-repos {
+  color: #7bcbc4;
+  height: 140px;
+  padding-top: 62px;
+  text-align: center;
+  font-size: 1.25em;
+}
+
+.repo-wrap img {
+  min-width: 100%;
+}
+
+.is-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@media (min-width: 0) and (max-width: 549px) {
+  .repo-list li {
+    text-align: center;
+    margin: 20px 0 0;
+    font-size: 0;
+  }
+}
+
+@media (min-width: 550px) {
+  .repo-list li {
+    float: left;
+    width: 50%;
+    margin: 0;
+  }
+  .repo-wrap img {
+    height: 235px;
+  }
+  .repo-list .no-repos {
+    float: none;
+    width: 100%;
+  }
+  .repo-wrap {
+    border: 1px solid white;
+    padding: 0;
+    overflow: hidden;
+    font-size: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  body {
+    padding-top: 115px;
+  }
+  .main-title {
+    float: left;
+  }
+  .search-form {
+    width: 422px;
+    float: right;
+    margin-top: 34px;
+  }
+  .repo-list li {
+    width: 33.333333333%;
+  }
+}
+
+@media (min-width: 769px) {
+  .repo-list li:nth-of-type(3n + 1) {
+    clear: left;
+  }
+}
