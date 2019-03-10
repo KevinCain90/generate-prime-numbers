@@ -107,7 +107,7 @@ export default class App extends Component {
                 name='search'
                 placeholder='Search...'
               />
-              <Button onClick={this.performSearch}>Generate</Button>
+              <Button onClick={this.performSearch}>Generate Numbers</Button>
             </form>
           </Inner>
         </MainHeader>
