@@ -94,7 +94,7 @@ export default class App extends Component {
       <div>
         <MainHeader>
           <Inner>
-            <MainTitle>Kevin's Prime Number App</MainTitle>
+            <MainTitle>Kevins Prime Number App</MainTitle>
             <form
               className='search-form'
               onSubmit={e => {
