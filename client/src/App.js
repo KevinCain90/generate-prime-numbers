@@ -39,17 +39,6 @@ const MainContent = styled.div`
   }
 `;
 
-const StyledLabel = styled.label`
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px;
-`;
-
 const StyledText = styled.input`
   height: 30px;
   border-radius: 2.5px;
@@ -65,7 +54,7 @@ const StyledText = styled.input`
 `;
 
 const Button = styled.button`
-  display: inline-block;
+  display: inline;
   color: blue;
   font-size: 1em;
   margin: 1em;
@@ -112,7 +101,6 @@ export default class App extends Component {
                 e.preventDefault();
               }}
             >
-              <StyledLabel>Search</StyledLabel>
               <StyledText
                 type='search'
                 onChange={this.onSearchChange}

@@ -17,7 +17,7 @@ const NumberList = props => {
   let numbers;
   numbers = <Number primeNumbers={resultsAsString} />;
 
-  return <StyledRepoList>{numbers} sfsdfd</StyledRepoList>;
+  return <StyledRepoList>{numbers}</StyledRepoList>;
 };
 
 export default NumberList;
